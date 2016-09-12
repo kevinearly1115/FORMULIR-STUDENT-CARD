@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvhasil2;
 
     Spinner Jurusan;
-
+    TextView tvhasil3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +38,24 @@ public class MainActivity extends AppCompatActivity {
         perempuan = (RadioButton) findViewById(R.id.perempuan);
         tvhasil2 = (TextView) findViewById(R.id.hasil2);
 
+        Jurusan = (Spinner) findViewById(R.id.Jurusan);
+        tvhasil3 = (TextView) findViewById(R.id.hasil3);
+
+
+        findViewById(R.id.OK3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                doJurusan();
+            }
+        });
+
         findViewById(R.id.OK2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 doClick();
             }
         });
+
 
         bOK.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +65,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    private void doJurusan() {
+        tvhasil3.setText("Jurusan Anda " + Jurusan.getSelectedItem().toString());
     }
 
     private void doClick() {
