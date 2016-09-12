@@ -29,13 +29,42 @@ public class MainActivity extends AppCompatActivity {
         bOK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nama = etNama.getText().toString();
-                String Ttl = etTtl.getText().toString();
-                String Alamat = etAlamat.getText().toString();
-                tvhasil.setText(nama + " lahir di " + Ttl + " tinggal di ");
+                doProcess();
 
             }
         });
 
+    }
+
+    private void doProcess() {
+        if (isValid()) {
+            String nama = etNama.getText().toString();
+            String Ttl = etTtl.getText().toString();
+            String Alamat = etAlamat.getText().toString();
+            tvhasil.setText(nama + " lahir di " + Ttl + " tinggal di ");
+        }
+    }
+
+    private boolean isValid() {
+        boolean valid = true;
+
+        String nama = etNama.getText().toString();
+        String Ttl = etTtl.getText().toString();
+        String Alamat = etAlamat.getText().toString();
+
+        if (nama.isEmpty()) {
+            etNama.setError("Nama Belum Diisi");
+            valid = false;
+        } else {
+            etNama.setError(null);
+        }
+        if (Ttl.isEmpty()) {
+            etTtl.setError("Tempat Tanggal Lahir Belum Diisi");
+            valid = false;
+        } else {
+            etAlamat.setError(null);
+        }
+
+        return false;
     }
 }
