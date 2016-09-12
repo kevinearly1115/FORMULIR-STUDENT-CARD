@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
@@ -21,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
     Spinner Jurusan;
     TextView tvhasil3;
+
+    CheckBox ngoding, design, ngegame;
+    TextView tvhasil4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +44,18 @@ public class MainActivity extends AppCompatActivity {
 
         Jurusan = (Spinner) findViewById(R.id.Jurusan);
         tvhasil3 = (TextView) findViewById(R.id.hasil3);
+
+        ngoding = (CheckBox) findViewById(R.id.ngoding);
+        design = (CheckBox) findViewById(R.id.design);
+        ngegame = (CheckBox) findViewById(R.id.ngegame);
+        tvhasil4 = (TextView) findViewById(R.id.hasil4);
+
+        findViewById(R.id.OK4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                doHobi();
+            }
+        });
 
 
         findViewById(R.id.OK3).setOnClickListener(new View.OnClickListener() {
@@ -66,6 +82,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    private void doHobi() {
+        String hasil4 = "Hobi Anda :\n";
+        int startlen = hasil4.length();
+        if (ngoding.isChecked()) hasil4 += ngoding.getText() + "\n";
+        if (design.isChecked()) hasil4 += design.getText() + "\n";
+        if (ngegame.isChecked()) hasil4 += ngegame.getText() + "\n";
+
+
+        if (hasil4.length() == startlen) hasil4 += "Tidak Ada Pilihan";
+        tvhasil4.setText(hasil4);
     }
 
     private void doJurusan() {
