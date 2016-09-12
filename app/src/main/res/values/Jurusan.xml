@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Jurusan">
+        <item>Rekayasa Perangkat Lunak/RPL</item>
+        <item>Teknisi Komputer dan Jaringan/TKJ</item>
+    </string-array>
+</resources>

@@ -130,5 +130,33 @@
         android:layout_gravity="center_horizontal"
         android:text="hasil" />
 
+    <TextView
+        android:id="@+id/jurusan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jurusan"
+        android:textColor="#0097A7"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/Jurusan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Jurusan" />
+
+    <Button
+        android:id="@+id/OK3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="proses" />
+
+    <TextView
+        android:id="@+id/hasil3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="hasil" />
+
 </LinearLayout>
 </ScrollView>

@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
     RadioButton laki, perempuan;
     TextView tvhasil2;
+
+    Spinner Jurusan;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
