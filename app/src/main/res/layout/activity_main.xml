@@ -167,22 +167,22 @@
         android:textStyle="bold" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/ngoding"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New CheckBox" />
+        android:text="Ngoding" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/design"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New CheckBox" />
+        android:text="Design" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/ngegame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New CheckBox" />
+        android:text="NgeGame" />
 
 </LinearLayout>
 </ScrollView>
