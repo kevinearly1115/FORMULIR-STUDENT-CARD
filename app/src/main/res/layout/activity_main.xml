@@ -39,7 +39,9 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nama" />
+        android:text="Nama"
+        android:textColor="#0097A7"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/Nama"
@@ -50,7 +52,9 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tempat Tanggal Lahir" />
+        android:text="Tempat Tanggal Lahir"
+        android:textColor="#0097A7"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/Ttl"
@@ -61,7 +65,9 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alamat" />
+        android:text="Alamat"
+        android:textColor="#0097A7"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/Alamat"
@@ -86,7 +92,9 @@
         android:id="@+id/jk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gender" />
+        android:text="Gender"
+        android:textColor="#0097A7"
+        android:textStyle="bold" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -113,13 +121,14 @@
             android:layout_gravity="center_horizontal"
             android:text="proses" />
 
-        <TextView
-            android:id="@+id/hasil2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="hasil" />
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/hasil2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="hasil" />
 
 </LinearLayout>
 </ScrollView>
