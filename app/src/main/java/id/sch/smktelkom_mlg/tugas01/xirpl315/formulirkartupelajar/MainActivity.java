@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             String nama = etNama.getText().toString();
             String Ttl = etTtl.getText().toString();
             String Alamat = etAlamat.getText().toString();
-            tvhasil.setText(nama + " lahir di " + Ttl + " tinggal di ");
+            tvhasil.setText(nama + " lahir di " + Ttl + " tinggal di " + Alamat);
         }
     }
 
@@ -64,7 +64,13 @@ public class MainActivity extends AppCompatActivity {
         } else {
             etAlamat.setError(null);
         }
+        if (Alamat.isEmpty()) {
+            etAlamat.setError("Alamat Belum Diisi");
+            valid = false;
+        } else {
+            etAlamat.setError(null);
+        }
 
-        return false;
+        return valid;
     }
 }
